@@ -10,19 +10,19 @@ from KynanRobot import BOT_NAME, BOT_USERNAME, OWNER_ID, START_IMG, SUPPORT_CHAT
 @pbot.on_message(filters.command("alive"))
 async def awake(_, message: Message):
     TEXT = f"┏━━━━━━━━━━━━━━━━━━━━┓\n"
-    TEXT += f"┠➣ **ᴀᴋᴜ {BOT_NAME}.** \n"
-    TEXT += f"┠➣ **ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{telever}` \n"
-    TEXT += f"┠➣ **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{tlhver}` \n"
-    TEXT += f"┠➣ **ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{pyrover}` \n"
+    TEXT += f"┠➣ **GUA {BOT_NAME}.** \n"
+    TEXT += f"┠➣ **LIBRARY VERSION :** `{telever}` \n"
+    TEXT += f"┠➣ **TELETHON VERSION :** `{tlhver}` \n"
+    TEXT += f"┠➣ **PYROGRAM VERSION :** `{pyrover}` \n"
     TEXT += "┗━━━━━━━━━━━━━━━━━━━━┛\n\n"
-    TEXT += "**ᴛᴇʀɪᴍᴀᴋᴀsɪʜ sᴜᴅᴀʜ ᴍᴇɴᴀᴍʙᴀʜᴋᴀɴ ᴋᴜ ᴅɪsɪɴɪ ❤️**"
+    TEXT += "**THANKS YOO UDAH NAMBAHIN SI ARAB ROBOT DI GC LU❤️**"
     BUTTON = [
         [
-            InlineKeyboardButton("ʜᴇʟᴘ", url=f"https://t.me/{BOT_USERNAME}?start=help"),
-            InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
+            InlineKeyboardButton("HELP", url=f"https://t.me/{BOT_USERNAME}?start=help"),
+            InlineKeyboardButton("SUPPORT", url=f"https://t.me/{SUPPORT_CHAT}"),
         ],
         [
-            InlineKeyboardButton("ᴍʏ ᴏᴡɴᴇʀ", url=f"t.me/{OWNER_USERNAME}"),
+            InlineKeyboardButton("TUAN GUA", url=f"t.me/{OWNER_USERNAME}"),
         ]
     ]
     await message.reply_photo(
