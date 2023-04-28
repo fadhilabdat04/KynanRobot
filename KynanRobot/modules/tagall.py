@@ -16,7 +16,7 @@ async def mentionall(event):
     chat_id = event.chat_id
     if event.is_private:
         return await event.respond(
-            "__This command can be use in groups and channels!__"
+            "__Command Ini Tidak Bisa Di Gunakan Di Group Ini__"
         )
 
     is_admin = False
@@ -30,7 +30,7 @@ async def mentionall(event):
         ):
             is_admin = True
     if not is_admin:
-        return await event.respond("__Only admins can mention all!__")
+        return await event.respond("__Cuman Admin Yang Bisa Mention Blok!__")
 
     if event.pattern_match.group(1) and event.is_reply:
         return await event.respond("__Give me one argument!__")
@@ -42,11 +42,11 @@ async def mentionall(event):
         msg = await event.get_reply_message()
         if msg == None:
             return await event.respond(
-                "__I can't mention members for older messages! (messages which are sent before I'm added to group)__"
+                "__Saya Tidak Bisa Mention Members Pesan yang Lama! (messages which are sent before I'm added to group)__"
             )
     else:
         return await event.respond(
-            "__Reply to a message or give me some text to mention others!__"
+            "__Reply Pesan Atau Berikan Beberapa Pesan buat Mention Blok!__"
         )
 
     spam_chats.append(chat_id)
@@ -75,7 +75,7 @@ async def mentionall(event):
 @client.on(events.NewMessage(pattern="^/cancel$"))
 async def cancel_spam(event):
     if not event.chat_id in spam_chats:
-        return await event.respond("__There is no proccess on going...__")
+        return await event.respond("__Udah Ga Ada TAGAllan Nge...__")
     is_admin = False
     try:
         partici_ = await client(GetParticipantRequest(event.chat_id, event.sender_id))
@@ -87,14 +87,14 @@ async def cancel_spam(event):
         ):
             is_admin = True
     if not is_admin:
-        return await event.respond("__Only admins can execute this command!__")
+        return await event.respond("__Lu Bukan Admin Blok Cuman Admin Yang Bisa Ngasih Gua Perintah!__")
 
     else:
         try:
             spam_chats.remove(event.chat_id)
         except:
             pass
-        return await event.respond("__Stopped Mention.__")
+        return await event.respond("__Udah Berenti Meki.__")
 
 
 __mod_name__ = "Tag-All"
