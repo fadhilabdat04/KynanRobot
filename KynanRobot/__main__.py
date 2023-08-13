@@ -93,15 +93,15 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="ʙᴀɴᴛᴜᴀɴ", callback_data="kynan_support"
+        InlineKeyboardButton(text="ʙᴀɴᴛᴜᴀɴ", callback_data="SiArabGroup"
        ),
         InlineKeyboardButton(
-            text="azazel", callback_data="azazel_own"
+            text="SiArab x Robot", callback_data="azazel_own"
        ),
     ],
     [
         InlineKeyboardButton(
-            text="ᴀᴢᴀᴢᴇʟ  ᴛᴇʟᴀʜ  ᴅɪ  ɴʏᴀʟᴀᴋᴀɴ!", url="https://t.me/{BOT_USERNAME}?startgroup=true"
+            text="sɪ ᴧꝛᴧʙ  ᴛᴇʟᴀʜ  ᴅɪ  ɴʏᴀʟᴀᴋᴀɴ!", url="https://t.me/{BOT_USERNAME}?startgroup=true"
         ),
      ],
 ]
@@ -492,7 +492,7 @@ def kynan_about_callback(update, context):
                 [
                  [
                     InlineKeyboardButton(text="ϙʀɪs", url="{DONATE_LINK}"),
-                    InlineKeyboardButton(text="️azazel", url="https://t.me/{OWNER_USERNAME}"),
+                    InlineKeyboardButton(text="️sɪ ᴧꝛᴧʙ", url="https://t.me/{OWNER_USERNAME}"),
                  ],
                  [
                     InlineKeyboardButton(text="⩹", callback_data="azazel_back"),
