@@ -1,19 +1,10 @@
-import asyncio
 import logging
 import os
 import sys
-import json
-import asyncio
 import time
 
 import telegram.ext as tg
-from aiohttp import ClientSession
-from Python_ARQ import ARQ
-from pyrogram.types import Message
 from pyrogram import Client, errors
-from pyrogram.errors.exceptions.bad_request_400 import PeerIdInvalid, ChannelInvalid
-from pyrogram.types import Chat, User
-from pymongo import MongoClient
 from telethon import TelegramClient
 
 StartTime = time.time()
