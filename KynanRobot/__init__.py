@@ -5,7 +5,6 @@ import sys
 import json
 import asyncio
 import time
-import telegram.ext as tg
 
 import telegram.ext as tg
 from aiohttp import ClientSession
