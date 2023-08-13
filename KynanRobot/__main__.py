@@ -99,9 +99,14 @@ buttons = [
             text="SiArab x Robot", callback_data="azazel_own"
        ),
     ],
+      [
+        InlineKeyboardButton(
+            text="ᴊᴀsᴀ sɪ ᴧꝛᴧʙ", url="https://t.me/JasaSiArab"
+        ),
+     ],
     [
         InlineKeyboardButton(
-            text="sɪ ᴧꝛᴧʙ  ᴛᴇʟᴀʜ  ᴅɪ  ɴʏᴀʟᴀᴋᴀɴ!", url="https://t.me/{BOT_USERNAME}?startgroup=true"
+            text="ᴛᴀᴍʙᴀʜɪɴ sɪ ᴧꝛᴧʙ ᴋᴇ ɢʀᴏᴜᴘ ᴀᴍᴘᴀs ʟᴜ!", url="https://t.me/{BOT_USERNAME}?startgroup=true"
         ),
      ],
 ]
